@@ -23,7 +23,7 @@ source "$CCX_ROOT/ccx.sh"
 Or load it in the current shell only:
 
 ```sh
-export CCX_ROOT="/Users/cliffkai/Code/claude-api"
+export CCX_ROOT="/Users/cliffkai/Code/ccx"
 source "$CCX_ROOT/ccx.sh"
 ```
 

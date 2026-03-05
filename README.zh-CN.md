@@ -22,7 +22,7 @@ source "$CCX_ROOT/ccx.sh"
 或仅在当前 Shell 中临时加载：
 
 ```sh
-export CCX_ROOT="/Users/cliffkai/Code/claude-api"
+export CCX_ROOT="/Users/cliffkai/Code/ccx"
 source "$CCX_ROOT/ccx.sh"
 ```
 

@@ -77,6 +77,7 @@ ccx_has_settings_arg() {
 }
 
 ccx_list() {
+  [ -n "${ZSH_VERSION:-}" ] && setopt local_options NULL_GLOB
   local file
   local found
   local profile
@@ -198,6 +199,7 @@ ccx_run() {
 }
 
 ccx_define_profile_shortcuts() {
+  [ -n "${ZSH_VERSION:-}" ] && setopt local_options NULL_GLOB
   local file
   local name
 

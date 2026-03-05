@@ -29,7 +29,7 @@ No build or test commands. To try changes:
 
 ```sh
 # Load ccx into current shell
-export CCX_ROOT="/Users/cliffkai/Code/claude-api"
+export CCX_ROOT="/Users/cliffkai/Code/ccx"
 source "$CCX_ROOT/ccx.sh"
 
 # Sync profiles from cc-switch (requires cc-switch database)
