@@ -15,17 +15,12 @@
 在 `~/.zshrc` 中添加：
 
 ```sh
-export CCX_ROOT="/path/to/claude-api"
+export CCX_ROOT="/path/to/ccx"
 source "$CCX_ROOT/ccx.sh"
 ```
 
 或仅在当前 Shell 中临时加载：
 
-```sh
-export CCX_ROOT="/path/to/claude-api"
-source /path/to/claude-api/ccx.sh
-```
-e.g.
 ```sh
 export CCX_ROOT="/Users/cliffkai/Code/claude-api"
 source "$CCX_ROOT/ccx.sh"
@@ -45,18 +40,17 @@ source "$CCX_ROOT/ccx.sh"
 
 ## 快捷切换
 
-每个 `profiles/` 下的 JSON 文件会自动注册为同名 Shell 函数。例如存在 `profiles/gaccode.json`，则可以直接输入：
+每个 `profiles/` 下的 JSON 文件会自动注册为同名 Shell 函数。例如存在 `profiles/openrouter.json`，则可以直接输入：
 
 ```sh
-gaccode      # 等同于 ccx_use gaccode
+openrouter      # 等同于 ccx_use openrouter
 ```
 
-对于从 cc-switch 导入的非 ASCII 名称（如中文），使用 `ccx_list` 查看对应的别名，或直接用原名：
+对于从 cc-switch 导入的含空格名称，使用 `ccx_list` 查看对应的别名，或直接用原名：
 
 ```sh
-xianyu_shop           # 使用别名
-ccx_use 咸鱼学院路开店店  # 使用原名
-ccx_use "New API"     # 带空格的名称需要引号
+openrouter                    # 使用别名
+ccx_use "Google AI Studio"    # 带空格的名称需要引号
 ```
 
 选择配置后，直接运行 `claude` 即可自动附带 `--settings` 参数。

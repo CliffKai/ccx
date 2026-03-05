@@ -16,7 +16,7 @@ per-terminal override by wrapping `claude` with `--settings <profile.json>`.
 Add this to `~/.zshrc`:
 
 ```sh
-export CCX_ROOT="/Users/cliffkai/Code/claude-api"
+export CCX_ROOT="/path/to/ccx"
 source "$CCX_ROOT/ccx.sh"
 ```
 
@@ -24,7 +24,7 @@ Or load it in the current shell only:
 
 ```sh
 export CCX_ROOT="/Users/cliffkai/Code/claude-api"
-source /Users/cliffkai/Code/claude-api/ccx.sh
+source "$CCX_ROOT/ccx.sh"
 ```
 
 ## Usage
@@ -37,17 +37,16 @@ source /Users/cliffkai/Code/claude-api/ccx.sh
   Import all Claude providers from your `cc-switch` directory into
   `profiles/*.json`, then refresh shell shortcuts.
 
-- `gaccode`
-- `zenmux`
+- `openrouter`
+- `googleaistudio`
   Switch the current terminal window to that profile.
 
 For names imported from `cc-switch` that are not shell-safe, use the alias shown
 on the left side of `ccx_list`, for example:
 
 ```sh
-xianyu_shop
-ccx_use 咸鱼学院路开店店
-ccx_use "New API"
+openrouter            # use the alias
+ccx_use "Google AI Studio"  # names with spaces need quotes
 ```
 
 - `claude`
@@ -83,7 +82,7 @@ can use different profiles at the same time.
 If you want to sync directly from `cc-switch`, the default source directory is:
 
 ```sh
-/Users/cliffkai/Library/Mobile Documents/com~apple~CloudDocs/密钥/cc-switch
+~/Library/Mobile Documents/com~apple~CloudDocs/密钥/cc-switch
 ```
 
 You can override it before running `ccx_sync`:
