@@ -121,6 +121,25 @@ ccx_list() {
   fi
 }
 
+ccx_help() {
+  cat <<'EOF'
+ccx — per-terminal Claude Code profile switching
+
+Commands:
+  ccx_use <profile>            Switch active profile for this terminal
+  ccx_list                     List all available profiles
+  ccx_current                  Show the currently active profile
+  ccx_reset                    Clear profile selection (revert to default)
+  ccx_run <profile> [args...]  Run claude once with a specific profile
+  ccx_sync                     Sync profiles from cc-switch database
+  ccx_reload                   Reload profile shortcut functions
+  ccx_help                     Show this help message
+
+Each profile in profiles/ also registers a shortcut function
+(e.g. profiles/foo.json -> type "foo" to switch).
+EOF
+}
+
 ccx_current() {
   if [ -n "${CCX_PROFILE:-}" ]; then
     printf '%s\n' "$CCX_PROFILE"
