@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-07-18T10:51:57.463273+00:00",
+  "series": {},
+  "errors": {
+    "上证指数": "RuntimeError('[\"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\", \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\", \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"]')",
+    "PCB": "RuntimeError('[\"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\", \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\", \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"]')",
+    "存储芯片": "RuntimeError('[\"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\", \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\", \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"]')",
+    "半导体设备": "RuntimeError('[\"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\", \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\", \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"]')",
+    "半导体材料": "RuntimeError('[\"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\", \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\", \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"]')"
+  }
+}
