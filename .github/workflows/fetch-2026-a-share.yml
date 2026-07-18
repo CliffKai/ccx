@@ -28,3 +28,5 @@ jobs:
           git add market_data_job/output
           git commit -m 'Add complete 2026 A-share daily data [skip ci]' || echo 'No changes to commit'
           git push
+
+# trigger: 2026-07-18
