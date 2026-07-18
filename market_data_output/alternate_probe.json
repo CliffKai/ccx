@@ -1,0 +1,338 @@
+{
+  "000001": [
+    {
+      "url": "https://daxiapi.com/sk/000001.json",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 146,
+      "final_url": "https://daxiapi.com/sk/000001.json",
+      "sample": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "url": "https://daxiapi.com/gn/000001.json",
+      "status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "length": 9,
+      "final_url": "https://daxiapi.com/gn/000001.json",
+      "sample": "Not Found"
+    },
+    {
+      "url": "https://daxiapi.com/gn/000001",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 4669,
+      "final_url": "https://daxiapi.com/gn/000001",
+      "sample": "<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>股市热力图：000001概念概念股强弱分析 - 同花顺市场宽度 - 大虾皮</title>\n<meta name=\"description\" content=\"000001概念概念股页面，基于同花顺板块数据展示A股股市热力图、市场宽度、RPS相对强度、SCTR综合排名和形态选股信号，帮助投资者判断板块强弱、发现行业或概念内的强势股。\" />\n<meta name=\"keywords\" content=\"股市热力图,市场宽度,同花顺,000001,概念,概念股,AI选股,RPS,SCTR\" />\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"股市热力图：000001概念概念股强弱分析 - 同花顺市场宽度 - 大虾皮"
+    },
+    {
+      "url": "https://quote.eastmoney.com/bk/90.000001.html",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 767,
+      "final_url": "https://quote.eastmoney.com/q/90.000001.html",
+      "sample": "ï»¿<!DOCTYPE html>\n<html>\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta http-equiv=\"refresh\" content=\"3; url=https://www.eastmoney.com/\">\n    <meta http-equiv=\"expires\" content=\"0\" />\n    <title>æ±æ­ï¼æ¨è®¿é®çé¡µé¢ä¸å­å¨æå·²å é¤ï¼è¥æ¨å¨ä¸æ¹è´¢å¯ç½éå°ä¸ä¾¿ï¼æèå¸ææä»¬è½ä¸ºæ¨ååºæ´å¤çåè½åæ¹è¿ï¼æ¬¢è¿éæ¶æåºå®è´µæè§æå»ºè®®ãæä»¬å°æ ¹æ®æ¨çéæ±ï¼ä¸æ­å®åã</title>\n</head>\n<body>"
+    },
+    {
+      "url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=000001&scale=240&ma=no&datalen=300",
+      "status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "length": 66,
+      "final_url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=000001&scale=240&ma=no&datalen=300",
+      "sample": "/*<script>location.href='//sina.com';</script>*/\nvar _data=(null);"
+    }
+  ],
+  "000688": [
+    {
+      "url": "https://daxiapi.com/sk/000688.json",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 146,
+      "final_url": "https://daxiapi.com/sk/000688.json",
+      "sample": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "url": "https://daxiapi.com/gn/000688.json",
+      "status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "length": 9,
+      "final_url": "https://daxiapi.com/gn/000688.json",
+      "sample": "Not Found"
+    },
+    {
+      "url": "https://daxiapi.com/gn/000688",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 4669,
+      "final_url": "https://daxiapi.com/gn/000688",
+      "sample": "<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>股市热力图：000688概念概念股强弱分析 - 同花顺市场宽度 - 大虾皮</title>\n<meta name=\"description\" content=\"000688概念概念股页面，基于同花顺板块数据展示A股股市热力图、市场宽度、RPS相对强度、SCTR综合排名和形态选股信号，帮助投资者判断板块强弱、发现行业或概念内的强势股。\" />\n<meta name=\"keywords\" content=\"股市热力图,市场宽度,同花顺,000688,概念,概念股,AI选股,RPS,SCTR\" />\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"股市热力图：000688概念概念股强弱分析 - 同花顺市场宽度 - 大虾皮"
+    },
+    {
+      "url": "https://quote.eastmoney.com/bk/90.000688.html",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 767,
+      "final_url": "https://quote.eastmoney.com/q/90.000688.html",
+      "sample": "ï»¿<!DOCTYPE html>\n<html>\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta http-equiv=\"refresh\" content=\"3; url=https://www.eastmoney.com/\">\n    <meta http-equiv=\"expires\" content=\"0\" />\n    <title>æ±æ­ï¼æ¨è®¿é®çé¡µé¢ä¸å­å¨æå·²å é¤ï¼è¥æ¨å¨ä¸æ¹è´¢å¯ç½éå°ä¸ä¾¿ï¼æèå¸ææä»¬è½ä¸ºæ¨ååºæ´å¤çåè½åæ¹è¿ï¼æ¬¢è¿éæ¶æåºå®è´µæè§æå»ºè®®ãæä»¬å°æ ¹æ®æ¨çéæ±ï¼ä¸æ­å®åã</title>\n</head>\n<body>"
+    },
+    {
+      "url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=000688&scale=240&ma=no&datalen=300",
+      "status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "length": 66,
+      "final_url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=000688&scale=240&ma=no&datalen=300",
+      "sample": "/*<script>location.href='//sina.com';</script>*/\nvar _data=(null);"
+    }
+  ],
+  "399006": [
+    {
+      "url": "https://daxiapi.com/sk/399006.json",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 146,
+      "final_url": "https://daxiapi.com/sk/399006.json",
+      "sample": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "url": "https://daxiapi.com/gn/399006.json",
+      "status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "length": 9,
+      "final_url": "https://daxiapi.com/gn/399006.json",
+      "sample": "Not Found"
+    },
+    {
+      "url": "https://daxiapi.com/gn/399006",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 4669,
+      "final_url": "https://daxiapi.com/gn/399006",
+      "sample": "<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>股市热力图：399006概念概念股强弱分析 - 同花顺市场宽度 - 大虾皮</title>\n<meta name=\"description\" content=\"399006概念概念股页面，基于同花顺板块数据展示A股股市热力图、市场宽度、RPS相对强度、SCTR综合排名和形态选股信号，帮助投资者判断板块强弱、发现行业或概念内的强势股。\" />\n<meta name=\"keywords\" content=\"股市热力图,市场宽度,同花顺,399006,概念,概念股,AI选股,RPS,SCTR\" />\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"股市热力图：399006概念概念股强弱分析 - 同花顺市场宽度 - 大虾皮"
+    },
+    {
+      "url": "https://quote.eastmoney.com/bk/90.399006.html",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 767,
+      "final_url": "https://quote.eastmoney.com/q/90.399006.html",
+      "sample": "ï»¿<!DOCTYPE html>\n<html>\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta http-equiv=\"refresh\" content=\"3; url=https://www.eastmoney.com/\">\n    <meta http-equiv=\"expires\" content=\"0\" />\n    <title>æ±æ­ï¼æ¨è®¿é®çé¡µé¢ä¸å­å¨æå·²å é¤ï¼è¥æ¨å¨ä¸æ¹è´¢å¯ç½éå°ä¸ä¾¿ï¼æèå¸ææä»¬è½ä¸ºæ¨ååºæ´å¤çåè½åæ¹è¿ï¼æ¬¢è¿éæ¶æåºå®è´µæè§æå»ºè®®ãæä»¬å°æ ¹æ®æ¨çéæ±ï¼ä¸æ­å®åã</title>\n</head>\n<body>"
+    },
+    {
+      "url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=399006&scale=240&ma=no&datalen=300",
+      "status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "length": 66,
+      "final_url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=399006&scale=240&ma=no&datalen=300",
+      "sample": "/*<script>location.href='//sina.com';</script>*/\nvar _data=(null);"
+    }
+  ],
+  "BK1128": [
+    {
+      "url": "https://daxiapi.com/sk/BK1128.json",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 146,
+      "final_url": "https://daxiapi.com/sk/BK1128.json",
+      "sample": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "url": "https://daxiapi.com/gn/BK1128.json",
+      "status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "length": 9,
+      "final_url": "https://daxiapi.com/gn/BK1128.json",
+      "sample": "Not Found"
+    },
+    {
+      "url": "https://daxiapi.com/gn/BK1128",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 10792,
+      "final_url": "https://daxiapi.com/gn/BK1128",
+      "sample": "<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>股市热力图：CPO概念(BK1128)概念概念股强弱分析 - 东方财富市场宽度 - 大虾皮</title>\n<meta name=\"description\" content=\"CPO概念(BK1128)概念概念股页面，基于东方财富板块数据展示A股股市热力图、市场宽度、RPS相对强度、SCTR综合排名和形态选股信号，帮助投资者判断板块强弱、发现行业或概念内的强势股。 当前强度评分为-19.39（极弱），当日涨跌-9.68%。\" />\n<meta name=\"keywords\" content=\"股市热力图,市场宽度,东方财富,CPO概念,概念,概念股,AI选股,RPS,SCTR\" />\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\""
+    },
+    {
+      "url": "https://quote.eastmoney.com/bk/90.BK1128.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 45664,
+      "final_url": "https://quote.eastmoney.com/bk/90.BK1128.html",
+      "sample": "<!DOCTYPE html><html><head><meta name=\"sinfo\" data-bz=\"STime: 2026-07-18 19:04:06 SNum: 216\"/><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\"/><meta name=\"referrer\" content=\"always\"/><meta http-equiv=\"refresh\" content=\"720\"/><title>CPO概念(BK1128)_行情中心_东方财富网</title><meta name=\"keywords\" content=\"CPO概念(BK1128),东方财富网,大盘指数,个股,股票,行情,大盘,指数,板块,权证,基金,综合排行,自选股,高速行情\"/><meta name=\"description\" content"
+    },
+    {
+      "url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=BK1128&scale=240&ma=no&datalen=300",
+      "status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "length": 66,
+      "final_url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=BK1128&scale=240&ma=no&datalen=300",
+      "sample": "/*<script>location.href='//sina.com';</script>*/\nvar _data=(null);"
+    }
+  ],
+  "BK0877": [
+    {
+      "url": "https://daxiapi.com/sk/BK0877.json",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 146,
+      "final_url": "https://daxiapi.com/sk/BK0877.json",
+      "sample": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "url": "https://daxiapi.com/gn/BK0877.json",
+      "status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "length": 9,
+      "final_url": "https://daxiapi.com/gn/BK0877.json",
+      "sample": "Not Found"
+    },
+    {
+      "url": "https://daxiapi.com/gn/BK0877",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 10746,
+      "final_url": "https://daxiapi.com/gn/BK0877",
+      "sample": "<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>股市热力图：PCB(BK0877)概念概念股强弱分析 - 东方财富市场宽度 - 大虾皮</title>\n<meta name=\"description\" content=\"PCB(BK0877)概念概念股页面，基于东方财富板块数据展示A股股市热力图、市场宽度、RPS相对强度、SCTR综合排名和形态选股信号，帮助投资者判断板块强弱、发现行业或概念内的强势股。 当前强度评分为-18.61（极弱），当日涨跌-7.99%。\" />\n<meta name=\"keywords\" content=\"股市热力图,市场宽度,东方财富,PCB,概念,概念股,AI选股,RPS,SCTR\" />\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name"
+    },
+    {
+      "url": "https://quote.eastmoney.com/bk/90.BK0877.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 45562,
+      "final_url": "https://quote.eastmoney.com/bk/90.BK0877.html",
+      "sample": "<!DOCTYPE html><html><head><meta name=\"sinfo\" data-bz=\"STime: 2026-07-18 19:04:25 SNum: 150\"/><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\"/><meta name=\"referrer\" content=\"always\"/><meta http-equiv=\"refresh\" content=\"720\"/><title>PCB(BK0877)_行情中心_东方财富网</title><meta name=\"keywords\" content=\"PCB(BK0877),东方财富网,大盘指数,个股,股票,行情,大盘,指数,板块,权证,基金,综合排行,自选股,高速行情\"/><meta name=\"description\" content=\"提供"
+    },
+    {
+      "url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=BK0877&scale=240&ma=no&datalen=300",
+      "status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "length": 66,
+      "final_url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=BK0877&scale=240&ma=no&datalen=300",
+      "sample": "/*<script>location.href='//sina.com';</script>*/\nvar _data=(null);"
+    }
+  ],
+  "BK1137": [
+    {
+      "url": "https://daxiapi.com/sk/BK1137.json",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 146,
+      "final_url": "https://daxiapi.com/sk/BK1137.json",
+      "sample": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "url": "https://daxiapi.com/gn/BK1137.json",
+      "status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "length": 9,
+      "final_url": "https://daxiapi.com/gn/BK1137.json",
+      "sample": "Not Found"
+    },
+    {
+      "url": "https://daxiapi.com/gn/BK1137",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 10809,
+      "final_url": "https://daxiapi.com/gn/BK1137",
+      "sample": "<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>股市热力图：存储芯片(BK1137)概念概念股强弱分析 - 东方财富市场宽度 - 大虾皮</title>\n<meta name=\"description\" content=\"存储芯片(BK1137)概念概念股页面，基于东方财富板块数据展示A股股市热力图、市场宽度、RPS相对强度、SCTR综合排名和形态选股信号，帮助投资者判断板块强弱、发现行业或概念内的强势股。 当前强度评分为-19.12（极弱），当日涨跌-8.99%。\" />\n<meta name=\"keywords\" content=\"股市热力图,市场宽度,东方财富,存储芯片,概念,概念股,AI选股,RPS,SCTR\" />\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"n"
+    },
+    {
+      "url": "https://quote.eastmoney.com/bk/90.BK1137.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 45721,
+      "final_url": "https://quote.eastmoney.com/bk/90.BK1137.html",
+      "sample": "<!DOCTYPE html><html><head><meta name=\"sinfo\" data-bz=\"STime: 2026-07-18 19:01:07 SNum: 215\"/><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\"/><meta name=\"referrer\" content=\"always\"/><meta http-equiv=\"refresh\" content=\"720\"/><title>存储芯片(BK1137)_行情中心_东方财富网</title><meta name=\"keywords\" content=\"存储芯片(BK1137),东方财富网,大盘指数,个股,股票,行情,大盘,指数,板块,权证,基金,综合排行,自选股,高速行情\"/><meta name=\"description\" content=\""
+    },
+    {
+      "url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=BK1137&scale=240&ma=no&datalen=300",
+      "status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "length": 66,
+      "final_url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=BK1137&scale=240&ma=no&datalen=300",
+      "sample": "/*<script>location.href='//sina.com';</script>*/\nvar _data=(null);"
+    }
+  ],
+  "BK1326": [
+    {
+      "url": "https://daxiapi.com/sk/BK1326.json",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 146,
+      "final_url": "https://daxiapi.com/sk/BK1326.json",
+      "sample": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "url": "https://daxiapi.com/gn/BK1326.json",
+      "status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "length": 9,
+      "final_url": "https://daxiapi.com/gn/BK1326.json",
+      "sample": "Not Found"
+    },
+    {
+      "url": "https://daxiapi.com/gn/BK1326",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 4678,
+      "final_url": "https://daxiapi.com/gn/BK1326",
+      "sample": "<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>股市热力图：BK1326概念概念股强弱分析 - 东方财富市场宽度 - 大虾皮</title>\n<meta name=\"description\" content=\"BK1326概念概念股页面，基于东方财富板块数据展示A股股市热力图、市场宽度、RPS相对强度、SCTR综合排名和形态选股信号，帮助投资者判断板块强弱、发现行业或概念内的强势股。\" />\n<meta name=\"keywords\" content=\"股市热力图,市场宽度,东方财富,BK1326,概念,概念股,AI选股,RPS,SCTR\" />\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"股市热力图：BK1326概念概念股强弱分析 - 东方财富市场宽度 -"
+    },
+    {
+      "url": "https://quote.eastmoney.com/bk/90.BK1326.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 45772,
+      "final_url": "https://quote.eastmoney.com/bk/90.BK1326.html",
+      "sample": "<!DOCTYPE html><html><head><meta name=\"sinfo\" data-bz=\"STime: 2026-07-18 19:03:39 SNum: 149\"/><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\"/><meta name=\"referrer\" content=\"always\"/><meta http-equiv=\"refresh\" content=\"720\"/><title>半导体设备(BK1326)_行情中心_东方财富网</title><meta name=\"keywords\" content=\"半导体设备(BK1326),东方财富网,大盘指数,个股,股票,行情,大盘,指数,板块,权证,基金,综合排行,自选股,高速行情\"/><meta name=\"description\" content"
+    },
+    {
+      "url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=BK1326&scale=240&ma=no&datalen=300",
+      "status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "length": 66,
+      "final_url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=BK1326&scale=240&ma=no&datalen=300",
+      "sample": "/*<script>location.href='//sina.com';</script>*/\nvar _data=(null);"
+    }
+  ],
+  "BK1325": [
+    {
+      "url": "https://daxiapi.com/sk/BK1325.json",
+      "status": 404,
+      "content_type": "text/html",
+      "length": 146,
+      "final_url": "https://daxiapi.com/sk/BK1325.json",
+      "sample": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "url": "https://daxiapi.com/gn/BK1325.json",
+      "status": 404,
+      "content_type": "text/plain; charset=utf-8",
+      "length": 9,
+      "final_url": "https://daxiapi.com/gn/BK1325.json",
+      "sample": "Not Found"
+    },
+    {
+      "url": "https://daxiapi.com/gn/BK1325",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 4678,
+      "final_url": "https://daxiapi.com/gn/BK1325",
+      "sample": "<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>股市热力图：BK1325概念概念股强弱分析 - 东方财富市场宽度 - 大虾皮</title>\n<meta name=\"description\" content=\"BK1325概念概念股页面，基于东方财富板块数据展示A股股市热力图、市场宽度、RPS相对强度、SCTR综合排名和形态选股信号，帮助投资者判断板块强弱、发现行业或概念内的强势股。\" />\n<meta name=\"keywords\" content=\"股市热力图,市场宽度,东方财富,BK1325,概念,概念股,AI选股,RPS,SCTR\" />\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"股市热力图：BK1325概念概念股强弱分析 - 东方财富市场宽度 -"
+    },
+    {
+      "url": "https://quote.eastmoney.com/bk/90.BK1325.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "length": 45772,
+      "final_url": "https://quote.eastmoney.com/bk/90.BK1325.html",
+      "sample": "<!DOCTYPE html><html><head><meta name=\"sinfo\" data-bz=\"STime: 2026-07-18 19:04:38 SNum: 149\"/><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\"/><meta name=\"referrer\" content=\"always\"/><meta http-equiv=\"refresh\" content=\"720\"/><title>半导体材料(BK1325)_行情中心_东方财富网</title><meta name=\"keywords\" content=\"半导体材料(BK1325),东方财富网,大盘指数,个股,股票,行情,大盘,指数,板块,权证,基金,综合排行,自选股,高速行情\"/><meta name=\"description\" content"
+    },
+    {
+      "url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=BK1325&scale=240&ma=no&datalen=300",
+      "status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "length": 66,
+      "final_url": "https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol=BK1325&scale=240&ma=no&datalen=300",
+      "sample": "/*<script>location.href='//sina.com';</script>*/\nvar _data=(null);"
+    }
+  ]
+}
