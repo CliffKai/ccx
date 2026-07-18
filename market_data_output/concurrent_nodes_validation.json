@@ -1,0 +1,34 @@
+{
+  "generated_at_utc": "2026-07-18T11:10:18.195068+00:00",
+  "series": {
+    "上证指数": {
+      "code": "000001.SH",
+      "rows": 129,
+      "first_date": "2026-01-05",
+      "last_date": "2026-07-17",
+      "last_date_ok": true,
+      "base_close": 3968.84,
+      "max_abs_recalc_diff_bp": 0.4995167293895264,
+      "source_name": "上证指数",
+      "source_code": "000001",
+      "node": "https://47.push2his.eastmoney.com/api/qt/stock/kline/get"
+    },
+    "PCB": {
+      "code": "BK0877",
+      "rows": 129,
+      "first_date": "2026-01-05",
+      "last_date": "2026-07-17",
+      "last_date_ok": true,
+      "base_close": 2724.26,
+      "max_abs_recalc_diff_bp": 0.4914816726903304,
+      "source_name": "PCB",
+      "source_code": "BK0877",
+      "node": "https://40.push2his.eastmoney.com/api/qt/stock/kline/get"
+    }
+  },
+  "errors": {
+    "存储芯片": "RuntimeError('all numbered nodes failed')",
+    "半导体设备": "RuntimeError('all numbered nodes failed')",
+    "半导体材料": "RuntimeError('all numbered nodes failed')"
+  }
+}
