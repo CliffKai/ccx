@@ -1,24 +1,16 @@
-import json
+import json,re
 from pathlib import Path
 import requests
 OUT=Path('market_data_output');OUT.mkdir(exist_ok=True)
-codes=['000001','000688','399006','BK1128','BK0877','BK1137','BK1326','BK1325']
-templates=[
- 'https://daxiapi.com/sk/{code}.json',
- 'https://daxiapi.com/gn/{code}.json',
- 'https://daxiapi.com/gn/{code}',
- 'https://quote.eastmoney.com/bk/90.{code}.html',
- 'https://quotes.sina.cn/cn/api/jsonp.php/var%20_data=/CN_MarketDataService.getKLineData?symbol={code}&scale=240&ma=no&datalen=300',
-]
-headers={'User-Agent':'Mozilla/5.0','Accept':'*/*'}
-out={}
-for code in codes:
- out[code]=[]
- for t in templates:
-  u=t.format(code=code)
-  try:
-   r=requests.get(u,headers=headers,timeout=30,allow_redirects=True)
-   out[code].append({'url':u,'status':r.status_code,'content_type':r.headers.get('content-type'),'length':len(r.content),'final_url':r.url,'sample':r.text[:500]})
-  except Exception as e:out[code].append({'url':u,'error':repr(e)})
-with (OUT/'alternate_probe.json').open('w',encoding='utf-8') as f:json.dump(out,f,ensure_ascii=False,indent=2)
-print(json.dumps(out,ensure_ascii=False,indent=2))
+urls=['https://quote.eastmoney.com/bk/90.BK1128.html','https://quote.eastmoney.com/bk/90.BK0877.html']
+res={}
+for u in urls:
+ r=requests.get(u,headers={'User-Agent':'Mozilla/5.0'},timeout=40);t=r.text
+ scripts=re.findall(r'<script[^>]+src=["\']([^"\']+)',t)
+ needles={}
+ for n in ['push2his','kline','klines','__NEXT_DATA__','api/qt','f51','BK1128']:
+  pos=[m.start() for m in re.finditer(n,t,re.I)][:20]
+  needles[n]=[t[max(0,p-300):p+500] for p in pos]
+ res[u]={'status':r.status_code,'length':len(t),'scripts':scripts,'needles':needles}
+with (OUT/'quote_page_inspect.json').open('w',encoding='utf-8') as f:json.dump(res,f,ensure_ascii=False,indent=2)
+print(json.dumps(res,ensure_ascii=False,indent=2))
