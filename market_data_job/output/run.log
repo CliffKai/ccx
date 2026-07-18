@@ -1,0 +1,7 @@
+Fetching 上证指数...
+Traceback (most recent call last):
+  File "/home/runner/work/ccx/ccx/market_data_job/fetch_2026_a_share.py", line 278, in <module>
+    main()
+  File "/home/runner/work/ccx/ccx/market_data_job/fetch_2026_a_share.py", line 203, in main
+    raise RuntimeError(f"{spec.name}: no 2026 rows")
+RuntimeError: 上证指数: no 2026 rows
