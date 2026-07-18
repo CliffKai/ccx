@@ -1,7 +1,123 @@
 Fetching 上证指数...
-Traceback (most recent call last):
-  File "/home/runner/work/ccx/ccx/market_data_job/fetch_2026_a_share.py", line 277, in <module>
-    main()
-  File "/home/runner/work/ccx/ccx/market_data_job/fetch_2026_a_share.py", line 215, in main
-    raise RuntimeError(f"{spec.name}: no 2026 rows")
-RuntimeError: 上证指数: no 2026 rows
+  API 上证指数 000001: 152 raw rows, 2025-12-01..2026-07-17, https://r.jina.ai/http://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.000001&ut=fa5fd1943c7b386f172d6893dbfba10b&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&klt=101&fqt=0&beg=20251201&end=20260717&lmt=1000&_=20260718140000
+  OUTPUT 129 rows, 2026-01-05..2026-07-17
+Fetching 科创50指数...
+  API 科创50 000688: 152 raw rows, 2025-12-01..2026-07-17, https://r.jina.ai/http://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.000688&ut=fa5fd1943c7b386f172d6893dbfba10b&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&klt=101&fqt=0&beg=20251201&end=20260717&lmt=1000&_=20260718140000
+  OUTPUT 129 rows, 2026-01-05..2026-07-17
+Fetching 创业板指...
+  API 创业板指 399006: 152 raw rows, 2025-12-01..2026-07-17, https://r.jina.ai/http://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.399006&ut=fa5fd1943c7b386f172d6893dbfba10b&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&klt=101&fqt=0&beg=20251201&end=20260717&lmt=1000&_=20260718140000
+  OUTPUT 129 rows, 2026-01-05..2026-07-17
+Fetching CPO概念...
+  API CPO概念 BK1128: 152 raw rows, 2025-12-01..2026-07-17, https://r.jina.ai/http://push2his.eastmoney.com/api/qt/stock/kline/get?secid=90.BK1128&ut=fa5fd1943c7b386f172d6893dbfba10b&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&klt=101&fqt=0&beg=20251201&end=20260717&lmt=1000&_=20260718140000
+  OUTPUT 129 rows, 2026-01-05..2026-07-17
+Fetching PCB概念...
+  API PCB BK0877: 152 raw rows, 2025-12-01..2026-07-17, https://r.jina.ai/http://push2his.eastmoney.com/api/qt/stock/kline/get?secid=90.BK0877&ut=fa5fd1943c7b386f172d6893dbfba10b&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&klt=101&fqt=0&beg=20251201&end=20260717&lmt=1000&_=20260718140000
+  OUTPUT 129 rows, 2026-01-05..2026-07-17
+Fetching 存储芯片概念...
+  API 存储芯片 BK1137: 152 raw rows, 2025-12-01..2026-07-17, https://r.jina.ai/http://push2his.eastmoney.com/api/qt/stock/kline/get?secid=90.BK1137&ut=fa5fd1943c7b386f172d6893dbfba10b&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&klt=101&fqt=0&beg=20251201&end=20260717&lmt=1000&_=20260718140000
+  OUTPUT 129 rows, 2026-01-05..2026-07-17
+Fetching 半导体材料设备指数...
+  API 半导体材料设备 931743: 152 raw rows, 2025-12-01..2026-07-17, https://r.jina.ai/http://push2his.eastmoney.com/api/qt/stock/kline/get?secid=2.931743&ut=fa5fd1943c7b386f172d6893dbfba10b&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&klt=101&fqt=0&beg=20251201&end=20260717&lmt=1000&_=20260718140000
+  OUTPUT 129 rows, 2026-01-05..2026-07-17
+{
+  "generated_at_utc": "2026-07-18T13:58:20+00:00",
+  "requested_period": [
+    "2026-01-01",
+    "2026-07-17"
+  ],
+  "reference_series": "上证指数",
+  "reference_count": 129,
+  "series": {
+    "上证指数": {
+      "count": 129,
+      "first": "2026-01-05",
+      "last": "2026-07-17",
+      "missing_vs_reference": [],
+      "extra_vs_reference": [],
+      "duplicate_dates": [],
+      "complete": true
+    },
+    "科创50指数": {
+      "count": 129,
+      "first": "2026-01-05",
+      "last": "2026-07-17",
+      "missing_vs_reference": [],
+      "extra_vs_reference": [],
+      "duplicate_dates": [],
+      "complete": true
+    },
+    "创业板指": {
+      "count": 129,
+      "first": "2026-01-05",
+      "last": "2026-07-17",
+      "missing_vs_reference": [],
+      "extra_vs_reference": [],
+      "duplicate_dates": [],
+      "complete": true
+    },
+    "CPO概念": {
+      "count": 129,
+      "first": "2026-01-05",
+      "last": "2026-07-17",
+      "missing_vs_reference": [],
+      "extra_vs_reference": [],
+      "duplicate_dates": [],
+      "complete": true
+    },
+    "PCB概念": {
+      "count": 129,
+      "first": "2026-01-05",
+      "last": "2026-07-17",
+      "missing_vs_reference": [],
+      "extra_vs_reference": [],
+      "duplicate_dates": [],
+      "complete": true
+    },
+    "存储芯片概念": {
+      "count": 129,
+      "first": "2026-01-05",
+      "last": "2026-07-17",
+      "missing_vs_reference": [],
+      "extra_vs_reference": [],
+      "duplicate_dates": [],
+      "complete": true
+    },
+    "半导体材料设备指数": {
+      "count": 129,
+      "first": "2026-01-05",
+      "last": "2026-07-17",
+      "missing_vs_reference": [],
+      "extra_vs_reference": [],
+      "duplicate_dates": [],
+      "complete": true
+    }
+  },
+  "all_complete": false,
+  "cross_check_20260717": {
+    "上证指数": {
+      "eastmoney_close": 3764.15,
+      "tushare_close": 3764.1547,
+      "close_match": false,
+      "eastmoney_pct": -3.05,
+      "tushare_pct": -3.046,
+      "pct_match": true
+    },
+    "科创50指数": {
+      "eastmoney_close": 1715.4,
+      "tushare_close": 1715.4044,
+      "close_match": false,
+      "eastmoney_pct": -7.12,
+      "tushare_pct": -7.1186,
+      "pct_match": true
+    },
+    "创业板指": {
+      "eastmoney_close": 3428.63,
+      "tushare_close": 3428.6298,
+      "close_match": true,
+      "eastmoney_pct": -7.15,
+      "tushare_pct": -7.145,
+      "pct_match": true
+    }
+  }
+}
+Completeness/cross-check validation failed
