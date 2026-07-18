@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   issues:
     types: [opened]
+  pull_request:
+    types: [opened, synchronize]
   push:
     paths:
       - 'market_data_job/fetch_2026_a_share.py'
@@ -19,6 +21,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -30,4 +34,4 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add market_data_job/output
           git commit -m 'Add complete 2026 A-share daily data [skip ci]' || echo 'No changes to commit'
-          git push
+          git push origin HEAD:main
