@@ -1,0 +1,48 @@
+{
+  "generated_at_utc": "2026-07-18T10:49:30.997403+00:00",
+  "series": {
+    "科创50": {
+      "code": "000688.SH",
+      "rows": 129,
+      "first_date": "2026-01-05",
+      "last_date": "2026-07-17",
+      "last_date_ok": true,
+      "base_close": 1344.2,
+      "max_abs_recalc_diff_bp": 0.49636791743832287,
+      "source_name": "科创50",
+      "source_code": "000688",
+      "source_market": 1
+    },
+    "创业板指": {
+      "code": "399006.SZ",
+      "rows": 129,
+      "first_date": "2026-01-05",
+      "last_date": "2026-07-17",
+      "last_date_ok": true,
+      "base_close": 3203.17,
+      "max_abs_recalc_diff_bp": 0.49237219570064106,
+      "source_name": "创业板指",
+      "source_code": "399006",
+      "source_market": 0
+    },
+    "CPO概念": {
+      "code": "BK1128",
+      "rows": 129,
+      "first_date": "2026-01-05",
+      "last_date": "2026-07-17",
+      "last_date_ok": true,
+      "base_close": 5006.27,
+      "max_abs_recalc_diff_bp": 0.49600208646425337,
+      "source_name": "CPO概念",
+      "source_code": "BK1128",
+      "source_market": 90
+    }
+  },
+  "errors": {
+    "上证指数": "RuntimeError('[{\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}]')",
+    "PCB": "RuntimeError('[{\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}]')",
+    "存储芯片": "RuntimeError('[{\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}]')",
+    "半导体设备": "RuntimeError('[{\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}]')",
+    "半导体材料": "RuntimeError('[{\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}, {\"url\": \"https://push2his.eastmoney.com/api/qt/stock/kline/get\", \"error\": \"ConnectionError(ProtocolError(\\'Connection aborted.\\', RemoteDisconnected(\\'Remote end closed connection without response\\')))\"}]')"
+  }
+}
