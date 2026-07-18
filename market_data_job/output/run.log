@@ -2,6 +2,9 @@ Fetching 上证指数...
 Traceback (most recent call last):
   File "/home/runner/work/ccx/ccx/market_data_job/fetch_2026_a_share.py", line 278, in <module>
     main()
-  File "/home/runner/work/ccx/ccx/market_data_job/fetch_2026_a_share.py", line 203, in main
-    raise RuntimeError(f"{spec.name}: no 2026 rows")
-RuntimeError: 上证指数: no 2026 rows
+  File "/home/runner/work/ccx/ccx/market_data_job/fetch_2026_a_share.py", line 200, in main
+    raw, meta = fetch_series(spec)
+                ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ccx/ccx/market_data_job/fetch_2026_a_share.py", line 145, in fetch_series
+    raise RuntimeError(spec.name + " failed; " + " | ".join(errors))
+RuntimeError: 上证指数 failed; 1.000001 via https://push2his.eastmoney.com/api/qt/stock/kline/get: RuntimeError("request failed: https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.000001&ut=fa5fd1943c7b386f172d6893dbfba10b&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&klt=101&fqt=0&beg=20251201&end=20260717&lmt=1000; last=RemoteDisconnected('Remote end closed connection without response')") | 1.000001 via http://push2his.eastmoney.com/api/qt/stock/kline/get: RuntimeError("request failed: http://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.000001&ut=fa5fd1943c7b386f172d6893dbfba10b&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&klt=101&fqt=0&beg=20251201&end=20260717&lmt=1000; last=RemoteDisconnected('Remote end closed connection without response')")
