@@ -1,24 +1,29 @@
 from __future__ import annotations
-import csv,json,random,time
+import csv,json,random
+from concurrent.futures import ThreadPoolExecutor,as_completed
 from datetime import datetime,timezone
 from pathlib import Path
 import requests
 OUT=Path('market_data_output');OUT.mkdir(exist_ok=True)
 SERIES={'上证指数':{'code':'000001.SH','secid':'1.000001','kind':'官方指数'},'PCB':{'code':'BK0877','secid':'90.BK0877','kind':'东方财富概念板块'},'存储芯片':{'code':'BK1137','secid':'90.BK1137','kind':'东方财富概念板块'},'半导体设备':{'code':'BK1326','secid':'90.BK1326','kind':'东方财富板块'},'半导体材料':{'code':'BK1325','secid':'90.BK1325','kind':'东方财富板块'}}
 FIELDS=['名称','代码','口径','日期','开盘','最高','最低','收盘','供应商涨跌额','供应商涨跌幅_pct','复算涨跌额','复算涨跌幅_pct','涨跌幅复算差异_bp','年初至今涨跌幅_pct','成交量','成交额','振幅_pct','换手率_pct','数据源']
+PBASE={'ut':'fa5fd1943c7b386f172d6893dbfba10b','fields1':'f1,f2,f3,f4,f5,f6','fields2':'f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61','klt':'101','fqt':'0','beg':'20251201','end':'20260717','lmt':'100000'}
 H={'User-Agent':'Mozilla/5.0','Referer':'https://quote.eastmoney.com/','Accept':'application/json,text/plain,*/*','Connection':'close'}
+def one(node,secid):
+ u=f'https://{node}.push2his.eastmoney.com/api/qt/stock/kline/get';p=dict(PBASE,secid=secid)
+ try:
+  r=requests.get(u,params=p,headers=H,timeout=8);r.raise_for_status();j=r.json()
+  if j.get('data') and j['data'].get('klines'):return j,u
+ except Exception:return None
+ return None
 def fetch(secid):
- p={'secid':secid,'ut':'fa5fd1943c7b386f172d6893dbfba10b','fields1':'f1,f2,f3,f4,f5,f6','fields2':'f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61','klt':'101','fqt':'0','beg':'20251201','end':'20260717','lmt':'100000'}
- nodes=list(range(1,100));random.shuffle(nodes);errs=[]
- for n in nodes:
-  u=f'https://{n}.push2his.eastmoney.com/api/qt/stock/kline/get'
-  try:
-   r=requests.get(u,params=p,headers=H,timeout=12);r.raise_for_status();j=r.json()
-   if j.get('data') and j['data'].get('klines'):return j,u
-   errs.append({'node':n,'status':r.status_code,'sample':r.text[:100]})
-  except Exception as e:errs.append({'node':n,'error':repr(e)})
-  time.sleep(.25)
- raise RuntimeError(str(errs[-10:]))
+ nodes=list(range(1,100));random.shuffle(nodes)
+ with ThreadPoolExecutor(max_workers=30) as ex:
+  fs=[ex.submit(one,n,secid) for n in nodes]
+  for f in as_completed(fs):
+   x=f.result()
+   if x:return x
+ raise RuntimeError('all numbered nodes failed')
 def parse(name,cfg,j,u):
  raw=[]
  for line in j['data']['klines']:
@@ -44,6 +49,6 @@ def main():
   try:
    j,u=fetch(cfg['secid']);rows,info=parse(name,cfg,j,u);write(OUT/f"{cfg['code'].replace('.','_')}_{name}.csv",rows);meta['series'][name]=info
   except Exception as e:meta['errors'][name]=repr(e)
- with (OUT/'numbered_nodes_validation.json').open('w',encoding='utf-8') as f:json.dump(meta,f,ensure_ascii=False,indent=2)
+ with (OUT/'concurrent_nodes_validation.json').open('w',encoding='utf-8') as f:json.dump(meta,f,ensure_ascii=False,indent=2)
  print(json.dumps(meta,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()
