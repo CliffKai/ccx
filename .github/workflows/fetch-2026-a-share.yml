@@ -2,6 +2,8 @@ name: Fetch 2026 A-share requested data
 
 on:
   workflow_dispatch:
+  issues:
+    types: [opened]
   push:
     paths:
       - 'market_data_job/fetch_2026_a_share.py'
@@ -12,6 +14,7 @@ permissions:
 
 jobs:
   fetch:
+    if: github.event_name != 'issues' || startsWith(github.event.issue.title, '[market-data-fetch]')
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -28,5 +31,3 @@ jobs:
           git add market_data_job/output
           git commit -m 'Add complete 2026 A-share daily data [skip ci]' || echo 'No changes to commit'
           git push
-
-# trigger: 2026-07-18
