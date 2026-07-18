@@ -27,11 +27,27 @@ jobs:
         with:
           python-version: '3.11'
       - name: Fetch and validate complete data
-        run: python market_data_job/fetch_2026_a_share.py
-      - name: Commit generated raw data
+        id: fetchdata
+        continue-on-error: true
+        shell: bash
+        run: |
+          mkdir -p market_data_job/output
+          set -o pipefail
+          python market_data_job/fetch_2026_a_share.py 2>&1 | tee market_data_job/output/run.log
+      - name: Upload raw files and diagnostics
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-data-output
+          path: market_data_job/output
+          if-no-files-found: error
+          retention-days: 3
+      - name: Commit generated raw data and diagnostics
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add market_data_job/output
-          git commit -m 'Add complete 2026 A-share daily data [skip ci]' || echo 'No changes to commit'
+          git commit -m 'Add 2026 A-share data extraction output [skip ci]' || echo 'No changes to commit'
           git push origin HEAD:main
+      - name: Mark fetch failure
+        if: steps.fetchdata.outcome == 'failure'
+        run: exit 1
