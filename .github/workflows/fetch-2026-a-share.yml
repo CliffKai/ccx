@@ -1,54 +1,25 @@
-name: Fetch 2026 A-share requested data
+name: Cleanup temporary market data job
 
 on:
-  workflow_dispatch:
-  issues:
-    types: [opened]
-  pull_request:
-    types: [opened, synchronize]
   push:
     paths:
-      - 'market_data_job/fetch_2026_a_share_v2.py'
       - '.github/workflows/fetch-2026-a-share.yml'
 
 permissions:
   contents: write
 
 jobs:
-  fetch:
-    if: github.event_name != 'issues' || startsWith(github.event.issue.title, '[market-data-fetch]')
+  cleanup:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Fetch and validate complete data
-        id: fetchdata
-        continue-on-error: true
-        shell: bash
-        run: |
-          rm -rf market_data_job/output
-          mkdir -p market_data_job/output
-          set -o pipefail
-          python market_data_job/fetch_2026_a_share_v2.py 2>&1 | tee market_data_job/output/run.log
-      - name: Upload raw files and diagnostics
-        uses: actions/upload-artifact@v4
-        with:
-          name: market-data-output
-          path: market_data_job/output
-          if-no-files-found: error
-          retention-days: 3
-      - name: Commit generated raw data and diagnostics
+      - name: Remove temporary extraction files
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A market_data_job/output
-          git commit -m 'Add corrected 2026 A-share data output [skip ci]' || echo 'No changes to commit'
+          git rm -rf market_data_job
+          git rm .github/workflows/fetch-2026-a-share.yml
+          git commit -m 'Remove temporary A-share extraction job [skip ci]'
           git push origin HEAD:main
-      - name: Mark fetch failure
-        if: steps.fetchdata.outcome == 'failure'
-        run: exit 1
