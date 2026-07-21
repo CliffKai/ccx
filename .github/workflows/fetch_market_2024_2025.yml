@@ -1,0 +1,31 @@
+name: Fetch market data 2024-2025
+on:
+  pull_request:
+    paths:
+      - scripts/fetch_market_2024_2025.py
+permissions:
+  contents: read
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 24
+      matrix:
+        series: [SSE, STAR50, CHINEXT, CPO, PCB, MEMORY, SEMI_EQUIP, SEMI_MAT]
+        attempt: [0, 1, 2]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: Fetch one series
+        run: python scripts/fetch_market_2024_2025.py --series ${{ matrix.series }} --attempt ${{ matrix.attempt }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: market-${{ matrix.series }}-${{ matrix.attempt }}
+          path: job_output
+          retention-days: 1
